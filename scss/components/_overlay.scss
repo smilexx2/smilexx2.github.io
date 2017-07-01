@@ -1,0 +1,25 @@
+#overlay {
+    background: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: none;
+    .overlay-content {
+        height: 100%;
+        overflow: scroll;
+    }
+    .container {
+        width: 100%;
+        max-width: 800px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+.background-content {
+    height: 100%;
+    overflow: auto;
+}

@@ -1,0 +1,52 @@
+.sub-footer {
+    padding: 1.5em 0;
+    border-top: 2px solid $color-border;
+    font-weight: bold;
+    @extend %clearfix;
+    a {
+        text-transform: uppercase;
+        font-size: $footer-link-size;
+        float: right;
+    }
+    span {
+        float: left;
+        color: $color-name;
+    }
+}
+
+.footer-nav {
+    display: none;
+    ul {
+        @extend %clearfix;
+        @include tablet {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    li {
+        @include tablet {
+            display: inline-block;
+            margin-left: 2em;
+        }
+    }
+    @include tablet {
+        display: block;
+        float: right;
+    }
+}
+
+.main-footer {
+    color: $color-navigation-link;
+    p {
+        @extend %p-color;
+        @include tablet {
+            font-size: $footer-normail-size;
+        }
+    }
+}
+
+.back-to-top {
+    @include tablet {
+        display: none;
+    }
+}

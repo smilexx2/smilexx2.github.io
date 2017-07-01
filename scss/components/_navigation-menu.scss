@@ -1,0 +1,33 @@
+.main-nav {
+    display: none;
+    ul {
+        padding: 0;
+    }
+    li {
+        display: block;
+        background-color: white;
+        margin: 6px 0;
+        a {
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+            padding: 0.8em 0;
+        }
+        @include tablet {
+            display: inline-block;
+            margin: 0 1em;
+            background: inherit;
+        }
+        @include desktop {
+            margin: 0;
+            margin-left: 2em;
+        }
+    }
+    @include tablet {
+        display: block !important;
+    }
+    @include desktop {
+        float: right;
+        line-height: 70px;
+    }
+}

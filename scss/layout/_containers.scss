@@ -1,0 +1,6 @@
+.container {
+    padding: 1px 1em;
+    max-width: 1024px;
+    margin: auto;
+    @extend %clearfix;
+}

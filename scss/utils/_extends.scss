@@ -1,0 +1,13 @@
+// Paragraph color
+%p-color {
+    color: $color-paragragh;
+}
+
+// Clearfix
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

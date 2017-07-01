@@ -1,0 +1,98 @@
+.portfolio-item {
+    margin-bottom: 1.5em;
+    padding-bottom: 1px;
+    border-bottom: $border-style;
+    p {
+        font-size: $portfolio-normal-size;
+        padding: 0 1em;
+        @include tablet {
+            padding: 0 2em;
+            min-height: 63px;
+        }
+    }
+    .img-wrapper {
+        height: 180px;
+        img {
+            display: block;
+            height: 100%;
+            width: auto;
+            margin: auto;
+            cursor: pointer;
+        }
+    }
+    &.last {
+        border-bottom: none;
+    }
+    @include tablet {
+        @include block-position(left, 50%);
+        padding: 0 0.5em;
+        border-bottom: none;
+    }
+    @include desktop {
+        width: 33.33%;
+    }
+}
+
+.more-items {
+    padding-bottom: 1em;
+    border-bottom: $border-style;
+    clear: both;
+    @extend %clearfix;
+    span {
+        padding: 0.2em 1em;
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+    .img-wrapper {
+        @include block-position(left, 33.33%);
+        padding: 0.3em;
+        @include tablet {
+            padding: 0.6em;
+        }
+        @include desktop {
+            padding: 1.5em;
+        }
+    }
+}
+
+#skills {
+    margin-bottom: 1.5em;
+    padding-bottom: 1px;
+    clear: both;
+    .skill-item {
+        margin-bottom: 1.5em;
+        padding-bottom: 1px;
+    }
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 2px;
+        border-radius: $radius-skill-item;
+        color: white;
+    }
+}
+
+.contact {
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    a {
+        color: $color-link;
+        font-weight: 500;
+        margin-left: 1em;
+    }
+    @include tablet {
+        width: 40em;
+        margin: 0 auto;
+    }
+}
+
+.main-content {
+    background: $color-main-content;
+}

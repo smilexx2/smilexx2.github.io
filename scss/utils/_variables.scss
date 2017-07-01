@@ -1,0 +1,40 @@
+/* Color */
+
+$black: #000;
+$white: #fff;
+$black-haze: #f9fafa;
+$gallery: #ededed;
+$emerald: #5fcf80;
+$tundora: #4d4d4d;
+$oslo-grey: #7b8b8e;
+$gray: #848282;
+
+/* color components */
+
+$color-body: $black-haze;
+$color-border: $gallery;
+$color-skill-text: $white;
+$color-link: $gray;
+$color-main-content: $white;
+$color-name: $black;
+$color-navigation-link: $tundora;
+$color-mainnav-background-mobile: $white;
+$color-name-desktop: $black;
+$color-paragragh: $oslo-grey;
+
+/* Font */
+
+$dosis: 'Dosis';
+$sans: sans-serif;
+$subheading-size: 0.9em;
+$portfolio-normal-size: 0.9em;
+$footer-link-size: 0.8em;
+$footer-normail-size: 1.5em;
+$header-medium-size: 1.3em;
+$header-large-size: 1.5em;
+
+/* Border */
+
+$border-style: 1px solid $color-border;
+$radius-skill-item: 6px;
+$radius-main-heading: 2em;

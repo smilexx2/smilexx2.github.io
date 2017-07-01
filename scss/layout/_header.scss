@@ -1,0 +1,83 @@
+.main-header {
+    color: $color-navigation-link;
+    .text {
+        @extend %p-color;
+        padding-bottom: 32px;
+        .icons {
+            display: flex;
+            justify-content: center;
+            padding-top: 32px;
+        }
+        @include tablet {
+            text-align: left;
+            font-size: $header-medium-size;
+            width: 59%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        @include desktop {
+            font-size: $header-large-size;
+        }
+    }
+    h1 {
+        @include desktop {
+            float: left;
+            padding: 0.5em 1em;
+            color: $color-name-desktop;
+            border-radius: $radius-main-heading;
+            border-radius: 2em;
+            border: 3px solid;
+        }
+    }
+    .img-wrapper {
+        max-width: 225px;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        max-height: 225px;
+        border: 3px solid;
+    }
+    p {
+        margin: 0;
+        @include tablet {
+            padding-top: 32px;
+        }
+    }
+}
+
+.sub-header {
+    &,
+    ul {
+        @extend %clearfix;
+    }
+    @include tablet {
+        padding: 2em 0.5em 0;
+    }
+}
+
+.self-intro {
+    padding-top: 1px;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column-reverse;
+    @extend %clearfix;
+    @include tablet {
+        padding: 0 0.5em;
+        flex-direction: row;
+    }
+}
+
+.profile-img {
+    width: 80%;
+    margin: auto;
+    padding: 2em 0;
+    @include tablet {
+        @include block-position(right, 41%);
+        padding-top: 0;
+        padding-left: 1em;
+    }
+    @include desktop {
+        padding-left: 6em;
+    }
+}
