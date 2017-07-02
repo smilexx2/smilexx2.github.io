@@ -19,4 +19,4 @@ $(".menu-toggle").click(function() {
     return false;
 });
 
-//$(document.body).css("-webkit-overflow-scrolling", "touch");
+$(document.body).css("-webkit-overflow-scrolling", "touch");
