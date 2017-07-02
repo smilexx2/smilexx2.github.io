@@ -5,12 +5,12 @@
 html,
 body {
     height: 100%;
-    -webkit-overflow-scrolling: touch;
 }
 
 body {
     text-align: center;
     background: $color-body;
+    -webkit-overflow-scrolling: touch;
 }
 
 h2 {

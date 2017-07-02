@@ -16,12 +16,12 @@
 
 html,
 body {
-  height: 100%;
-  -webkit-overflow-scrolling: touch; }
+  height: 100%; }
 
 body {
   text-align: center;
-  background: #f9fafa; }
+  background: #f9fafa;
+  -webkit-overflow-scrolling: touch; }
 
 h2 {
   font-size: 0.9em;
