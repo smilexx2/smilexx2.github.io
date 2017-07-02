@@ -18,3 +18,5 @@ $(".menu-toggle").click(function() {
     $(".main-nav").slideToggle();
     return false;
 });
+
+$(document.body).css("-webkit-overflow-scrolling", "touch");
